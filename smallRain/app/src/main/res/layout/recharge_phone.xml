@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     style="@style/StyleLayoutMain">
+
+    <include layout="@layout/include_title_white"></include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                style="@style/function_list"
+                android:layout_marginTop="0dp"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom">
+
+                    <ImageView
+                        android:src="@mipmap/icon_cz_ye"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp" />
+
+                    <TextView
+                        android:text="余额"
+                        android:layout_marginLeft="8dp"
+                        style="@style/textstyle" />
+                    <TextView
+                        android:id="@+id/tv_balance"
+                        android:text="0.00"
+                        android:textSize="32sp"
+                        android:layout_marginLeft="8dp"
+                        style="@style/textstyle"/>
+                    <TextView
+                        android:text="元"
+                        android:layout_marginLeft="8dp"
+                        style="@style/textstyle"  />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_look_recharge"
+                    android:text="查看消费明细"
+                    style="@style/textstyle"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/icon_arrow_right"/>
+
+            </RelativeLayout>
+
+
+
+
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_above="@+id/btn_add"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"  />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_shuoming"
+                android:text="继续操作表示您已同意《充值协议》知晓充值本金和返现金额不可提现、转移、转赠。"
+
+                android:layout_margin="10dp"
+                style="@style/textgraystyle" />
+
+            <Button
+                android:id="@+id/btn_recharge"
+                android:text="立即充值"
+                style="@style/btn_bule_long" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

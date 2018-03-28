@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:background="@mipmap/pic_home_gg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="单类家纺"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                style="@style/btn_bule_long"
+                android:background="@drawable/layout_btn_round_bg_blue"
+                android:button="@null">
+
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4件套"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                style="@style/btn_bule_long"
+                android:textColor="@color/gray"
+                android:background="@drawable/layout_btn_round_bg_white_gray"
+                android:button="@null"/>
+
+        </RadioGroup>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"  />
+
+    </LinearLayout>
+
+</RelativeLayout>

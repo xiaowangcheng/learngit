@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="89dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/textstyle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:text="祝  显示 " />
+
+        <TextView
+            android:id="@+id/tv_tel"
+            style="@style/textstyle"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:text="12131231231" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            style="@style/textstyle"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginTop="20dp"
+            android:text="祝显示" />
+
+    </RelativeLayout>
+
+    <View style="@style/linestyle0"></View>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_defult"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/icom_dx_correct"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="设置为默认"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/tv_delete"
+            android:drawableLeft="@mipmap/icom_list_editor"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="编辑"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@mipmap/icom_list_delete"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="删除"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

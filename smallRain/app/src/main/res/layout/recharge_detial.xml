@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/StyleLayoutMain">
+
+
+    <include layout="@layout/include_title_white"></include>
+
+
+    <TableLayout
+       style="@style/table">
+
+        <RelativeLayout
+            style="@style/styleRow">
+            <TextView
+                android:text="支付金额"
+                style="@style/textnoralLeft"  />
+            <TextView
+                android:id="@+id/tv_amt"
+                android:text="+115.00"
+                android:textColor="#E94F4F"
+                style="@style/textnoralRight"/>
+        </RelativeLayout>
+
+        <View style="@style/linestyle0"></View>
+
+        <RelativeLayout
+            style="@style/styleRow">
+            <TextView
+                android:text="支付状态"
+                style="@style/textnoralLeft"  />
+            <TextView
+                android:text="支付成功"
+                style="@style/textnoralRight" />
+        </RelativeLayout>
+
+        <View style="@style/linestyle0"></View>
+
+        <RelativeLayout
+            style="@style/styleRow">
+            <TextView
+                android:text="支付方式"
+                style="@style/textnoralLeft"  />
+            <TextView
+                android:id="@+id/tv_payways"
+                android:text="微信"
+                style="@style/textnoralRight" />
+        </RelativeLayout>
+
+        <View style="@style/linestyle0"></View>
+
+        <RelativeLayout
+            style="@style/styleRow">
+            <TextView
+                android:text="服务项目"
+                style="@style/textnoralLeft"  />
+            <TextView
+                android:id="@+id/tv_servers"
+                android:text=""
+                style="@style/textnoralRight" />
+        </RelativeLayout>
+
+        <View style="@style/linestyle0"></View>
+
+
+        <RelativeLayout
+            style="@style/styleRow">
+            <TextView
+                android:text="支付创建时间"
+                style="@style/textnoralLeft"  />
+            <TextView
+                android:id="@+id/tv_time"
+                android:text="2017-10-10 12：28"
+                style="@style/textnoralRight" />
+        </RelativeLayout>
+
+        <View style="@style/linestyle0"></View>
+
+        <RelativeLayout
+            style="@style/styleRow">
+            <TextView
+                android:text="订单编号"
+                style="@style/textnoralLeft" />
+            <TextView
+                android:id="@+id/tv_no"
+                android:text="17012312312312"
+                style="@style/textnoralRight" />
+        </RelativeLayout>
+    </TableLayout>
+
+
+
+</LinearLayout>

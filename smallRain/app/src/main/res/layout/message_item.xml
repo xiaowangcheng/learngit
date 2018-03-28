@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rainbow.laundry.view.SwipeMenuView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="83dp"
+
+    android:background="@color/white"
+    android:clickable="true" >
+
+    <RelativeLayout
+        android:id="@+id/swipe_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/message_icon" />
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:textSize="15sp"
+                    android:text="你的订单已送达"
+                    android:textColor="#666666"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:text="123123123123123"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_detial"
+                android:textSize="12sp"
+                android:textColor="#666666"
+                android:layout_marginTop="7dp"
+                android:text="您在'彩虹洗衣店'下的订单正在送回中，请注意查收。（点击查看详情）"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:text="删除"
+        android:background="@color/red"
+        android:textColor="@android:color/white"/>
+
+</com.rainbow.laundry.view.SwipeMenuView>

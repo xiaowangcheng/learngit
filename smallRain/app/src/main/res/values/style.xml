@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="StyleLayoutMain">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/main_background</item>
+    </style>
+
+    <style name="baseStyle_w">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="baseStyle_m">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="textstyle" parent="baseStyle_w">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+    <style name="textgraystyle" parent="baseStyle_w">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+
+    <style name="textnoralLeft" parent="baseStyle_w">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="textnoralRight" parent="baseStyle_w">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:gravity">right|center</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <!-- 分割线样式 -->
+    <style name="linestyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dip</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+    <!-- 分割线样式 -->
+    <style name="linestyle0">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dip</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+
+    <style name="basebtn">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 按钮样式 -->
+    <style name="btn_bule_long" parent="basebtn">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/layout_btn_round_bg_blue</item>
+    </style>
+
+    <!-- 按钮样式 -->
+    <style name="btn_white_transfter_long" parent="basebtn">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/layout_btn_round_bg_transparence_white</item>
+    </style>
+
+    <!-- 按钮样式 -->
+    <style name="btn_bule_transfter_long" parent="basebtn">
+        <item name="android:textColor">@color/btn_bule</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/layout_btn_round_bg_transparence_bule</item>
+    </style>
+    <!-- 按钮样式 -->
+    <style name="btn_red_transfter_long" parent="basebtn">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/layout_btn_round_bg_transparence_red</item>
+    </style>
+
+    <!-- 按钮样式 -->
+    <style name="btn_gray_transfter_long" parent="basebtn">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/layout_btn_round_bg_transparence_gray</item>
+    </style>
+
+    <!-- 按钮样式 -->
+    <style name="btn_gray_white_long" parent="basebtn">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/layout_btn_round_bg_white_gray</item>
+    </style>
+
+    <style name="styleRow" parent="baseStyle_m">
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="function_list"  parent="baseStyle_m">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@drawable/shape_bg</item>
+    </style>
+
+    <!--EditText的样式-->
+    <style name="editStyle" parent="baseStyle_m">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+
+    <style name="table">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dip</item>
+        <item name="android:background">@drawable/shape_bg</item>
+        <item name="android:shrinkColumns">1</item>
+        <item name="android:stretchColumns">1</item>
+    </style>
+
+    <!-- table 行 -->
+    <style name="StyleRow">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">47dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:paddingRight">15dip</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingBottom">10dip</item>
+    </style>
+
+    <!-- table 行 -->
+    <style name="btn_radian" parent="baseStyle_w">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:paddingRight">15dip</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingBottom">5dip</item>
+    </style>
+
+
+    <style name="push_style">
+        <item name="android:hint">@string/style_hint</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="push_alias">
+        <item name="android:hint">@string/alias_hint</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="push_tag">
+        <item name="android:hint">@string/tag_hint</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Spinner 下拉框正常样式 -->
+    <style name="spinnerNormal" parent="textstyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/bg_sp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:spinnerMode">dialog</item>
+    </style>
+
+</resources>

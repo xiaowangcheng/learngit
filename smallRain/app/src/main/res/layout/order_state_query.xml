@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/StyleLayoutMain">
+
+    <include layout="@layout/include_title_white"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/lin_buttom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp" />
+
+                <TableLayout
+                    style="@style/table"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        style="@style/textstyle"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="订单信息" />
+
+                    <TableRow
+                        style="@style/styleRow"
+                        android:layout_marginLeft="20dp">
+
+                        <TextView
+                            style="@style/textgraystyle"
+                            android:text="订单编号：" />
+
+                        <TextView
+                            android:id="@+id/tv_Serial"
+                            style="@style/textgraystyle"  />
+                    </TableRow>
+
+                    <TableRow
+                        style="@style/styleRow"
+                        android:layout_marginLeft="20dp">
+
+                        <TextView
+                            style="@style/textgraystyle"
+                            android:text="下单时间：" />
+
+                        <TextView
+                            android:id="@+id/tv_PlaceOrder_time"
+                            style="@style/textgraystyle"  />
+                    </TableRow>
+
+                    <LinearLayout
+                        style="@style/styleRow"
+                        android:layout_marginLeft="20dp">
+
+                        <TextView
+                            style="@style/textgraystyle"
+                            android:text="服务项目：" />
+
+                        <TextView
+                            android:id="@+id/tv_project"
+                            style="@style/textgraystyle"
+                            android:layout_width="match_parent"
+                            android:drawableRight="@mipmap/icon_arrow_right"
+                            android:text="洗衣" />
+                    </LinearLayout>
+                </TableLayout>
+
+                <include layout="@layout/address_select"></include>
+
+
+                <LinearLayout
+                    android:id="@+id/lin_beizhu"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        style="@style/textstyle"
+                        android:text="备注信息" />
+
+                    <TextView
+                        android:id="@+id/tv_remark"
+                        style="@style/textstyle"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/lin_buttom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/btn_buttom1"
+                android:visibility="gone"
+                style="@style/btn_bule_transfter_long"
+                android:text="¥188 支付" />
+
+            <Button
+                android:id="@+id/btn_buttom2"
+                android:layout_marginTop="0dp"
+                style="@style/btn_bule_transfter_long"
+                android:visibility="gone"
+                android:text="取消订单" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

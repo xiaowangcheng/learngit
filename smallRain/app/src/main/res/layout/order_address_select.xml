@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/StyleLayoutMain">
+
+    <include layout="@layout/include_title_white"></include>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="请选择您需要的服务"
+                        style="@style/textstyle" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:scrollbars="none"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+
+
+
+                <include layout="@layout/address_select"></include>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:text="备注信息"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        style="@style/textstyle"   />
+
+                    <EditText
+                        android:id="@+id/et_remark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="14sp"
+                        android:background="@null"
+                        android:paddingBottom="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:hint="如有问题请添加备注信息"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/function_list"
+                    android:visibility="gone"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:text="优惠政策"
+                        android:textSize="14sp"
+                        style="@style/textstyle" />
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:text="满200送100"
+                        android:drawableLeft="@mipmap/discount"
+                        android:drawablePadding="3dp"
+                        android:textSize="14sp"
+                        android:textColor="#666666"
+                        style="@style/textstyle" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:text="一键下单"
+            style="@style/btn_bule_long"
+            android:layout_alignParentBottom="true" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

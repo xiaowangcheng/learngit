@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:id="@+id/lin"
+        style="@style/function_list"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/layout_btn_round_bg_white_gray"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="center">
+
+            <TextView
+                style="@style/textstyle"
+                android:layout_gravity="center_vertical"
+                android:text="请选择订单取消的原因" />
+
+        </LinearLayout>
+
+        <View style="@style/linestyle0"></View>
+
+        <LinearLayout
+            android:id="@+id/tv_cause_need"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:gravity="center">
+
+            <TextView
+                style="@style/textstyle"
+                android:layout_gravity="center_vertical"
+                android:text="不需要了"
+                android:textColor="@color/btn_bule" />
+
+        </LinearLayout>
+
+        <View style="@style/linestyle"></View>
+
+        <LinearLayout
+            android:id="@+id/tv_cause_time"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:gravity="center">
+
+            <TextView
+                style="@style/textstyle"
+                android:layout_gravity="center_vertical"
+                android:text="需要更换上门时间"
+                android:textColor="@color/btn_bule" />
+
+        </LinearLayout>
+
+        <View style="@style/linestyle"></View>
+
+        <LinearLayout
+            android:id="@+id/tv_cause_e"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:gravity="center">
+
+            <TextView
+                style="@style/textstyle"
+                android:layout_gravity="center_vertical"
+                android:text="小e拒绝取件或态度恶劣"
+                android:textColor="@color/btn_bule" />
+
+        </LinearLayout>
+
+        <View style="@style/linestyle"></View>
+
+        <LinearLayout
+            android:id="@+id/tv_cause_price"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:gravity="center">
+
+            <TextView
+                style="@style/textstyle"
+                android:layout_gravity="center_vertical"
+                android:text="价格因素"
+                android:textColor="@color/btn_bule" />
+        </LinearLayout>
+
+        <View style="@style/linestyle"></View>
+
+        <LinearLayout
+            android:id="@+id/tv_cause_other"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:gravity="center">
+
+            <TextView
+                style="@style/textstyle"
+                android:layout_gravity="center_vertical"
+                android:text="其他原因"
+                android:textColor="@color/btn_bule" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_cancel"
+        android:layout_below="@+id/lin"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textSize="18sp"
+        style="@style/btn_bule_long"
+        android:layout_height="41dp"/>
+</RelativeLayout>

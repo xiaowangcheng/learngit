@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/StyleLayoutMain"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+       style="@style/function_list"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_suggest"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:hint="请输入您的宝贵意见"
+            android:gravity="top"
+            android:padding="5dp"
+            android:background="@drawable/et_suggest_bg"/>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:text="确定"
+            style="@style/btn_bule_long" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:text="您也可以在微信搜索'彩虹洗衣'官方公众号与我们联系。"
+            android:textColor="#666666"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                android:text="客服热线："
+                android:textColor="#666666"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                android:text="400-818-8888"
+                android:textColor="#666666"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:text="（周一到周日8：30-22：00）"
+            android:layout_marginBottom="30dp"
+            android:textColor="#666666"/>
+
+    </LinearLayout>
+
+</LinearLayout>

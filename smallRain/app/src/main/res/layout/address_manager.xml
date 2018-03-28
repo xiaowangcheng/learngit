@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/StyleLayoutMain">
+
+    <include layout="@layout/include_title_white"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_above="@+id/btn_add"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"  />
+        <Button
+            android:id="@+id/btn_add"
+            android:text="添加新地址"
+            android:layout_alignParentBottom="true"
+            style="@style/btn_bule_long"
+            android:layout_marginBottom="15dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

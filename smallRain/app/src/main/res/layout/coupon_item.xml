@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/layout_btn_round_bg_white">
+
+        <LinearLayout
+            android:layout_width="106dp"
+            android:layout_height="76dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/layout_coupon_round_left_bule">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_amt_fuhao"
+                    android:text="¥ "
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_amt"
+                    android:text="15"
+                    android:textSize="21sp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="满"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/tv_man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="使用"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:id="@+id/tv_name"
+                android:text="彩虹洗衣券，每张订单仅限1张"
+                style="@style/textstyle"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                 />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:text="有效期至2017.12.12"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:text="立即使用"
+                android:visibility="invisible"
+                android:textColor="@color/btn_bule"
+                android:background="@drawable/layout_btn_round_bg_transparence_bule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

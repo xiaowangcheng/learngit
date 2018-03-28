@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/StyleLayoutMain">
+
+    <include layout="@layout/include_title_white"></include>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            style="@style/table">
+
+            <RelativeLayout style="@style/StyleRow">
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    style="@style/textstyle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="姓名        " />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    style="@style/editStyle"
+                    android:layout_toRightOf="@+id/tv_phone"
+                    android:layout_toLeftOf="@+id/rg_sex"
+                    android:hint="请输入姓名"   />
+
+                <RadioGroup
+                    android:id="@+id/rg_sex"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_man"
+                        android:text="先生"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/radio"
+                        android:drawablePadding="10dp"
+                        android:checked="true"
+                        android:textSize="13sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_womam"
+                        android:text="女士"
+                        android:button="@null"
+                        android:textSize="13sp"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <View style="@style/linestyle"></View>
+
+
+            <TableRow style="@style/StyleRow">
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="联系方式" />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    style="@style/editStyle"
+                    android:hint="请输入联系方式"
+                    android:inputType="phone"
+                    android:maxLength="11" />
+            </TableRow>
+
+            <View style="@style/linestyle"></View>
+
+            <LinearLayout style="@style/StyleRow">
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="所在地区" />
+
+
+                <Spinner
+                    android:id="@+id/sp_diqu"
+                    style="@style/spinnerNormal"></Spinner>
+
+                <TextView
+                    android:id="@+id/tv_region_show"
+                    style="@style/editStyle"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:text="请选择"
+                    android:drawableRight="@mipmap/icon_arrow_right"
+                    android:inputType="phone"
+                    android:maxLength="11" />
+
+            </LinearLayout>
+            <View style="@style/linestyle"></View>
+
+            <TableRow style="@style/StyleRow">
+
+                <TextView
+                    android:visibility="invisible"
+                    style="@style/textstyle" />
+
+
+                <EditText
+                    android:id="@+id/et_address_detial"
+                    style="@style/editStyle"
+                    android:hint="详细地址、具体门牌号" />
+            </TableRow>
+
+        </TableLayout>
+
+
+        <Button
+            android:id="@+id/btn_add"
+            android:text="添加新地址"
+            android:layout_alignParentBottom="true"
+            style="@style/btn_bule_long"
+            android:layout_marginBottom="15dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_region"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.rainbow.laundry.view.wheelView.WheelView
+                    android:id="@+id/id_province"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <com.rainbow.laundry.view.wheelView.WheelView
+                    android:id="@+id/id_city"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <com.rainbow.laundry.view.wheelView.WheelView
+                    android:id="@+id/id_district"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="#DBDBDB"
+                    android:gravity="center|center_horizontal"
+                    android:text="取消"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="#fa8436"
+                    android:gravity="center|center_horizontal"
+                    android:text="确定"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

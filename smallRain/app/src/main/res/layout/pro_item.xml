@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center">
+
+
+    <com.rainbow.laundry.view.NumImageView
+        android:id="@+id/image"
+        android:src="@mipmap/pic_jmb_cs"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@id/tv_pro_name"
+        android:text="t鞋／POLO衫"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:text="$12.00"
+        android:textColor="@color/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

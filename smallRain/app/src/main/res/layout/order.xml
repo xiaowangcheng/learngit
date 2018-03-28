@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/StyleLayoutMain">
+
+    <include layout="@layout/include_title_white"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_order"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/function_list"
+                android:paddingBottom="15dp">
+                <TextView
+                    android:text="请选择您需要的服务"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    style="@style/textstyle" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"  />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                style="@style/function_list"
+                android:paddingLeft="15dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp">
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:text="请选择您的收货地址"
+                    style="@style/textstyle" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/tv_title"
+                    android:text="祝存亮  1821631283"
+                    style="@style/textstyle" />
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_below="@+id/tv_name"
+                    android:text="北京海淀区大势大势"
+                    style="@style/textstyle" />
+
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_arrow_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                style="@style/function_list"
+                android:paddingLeft="15dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp">
+                <TextView
+                    android:text="优惠政策"
+                    style="@style/textstyle" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/tv_title"
+                    android:text="满200送100元"
+                    style="@style/textstyle" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_order"
+            android:text="一键下单"
+            style="@style/btn_bule_long"/>
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

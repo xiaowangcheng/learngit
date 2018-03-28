@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/StyleLayoutMain">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.jude.rollviewpager.RollPagerView
+                android:id="@+id/roll_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:rollviewpager_play_delay="3000"
+                app:rollviewpager_hint_paddingBottom="8dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:gravity="center">
+
+                <View
+                    style="@style/linestyle"
+                    android:layout_width="30dp"></View>
+                <TextView
+                    android:text="价目表"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    style="@style/linestyle"
+                    android:layout_width="30dp"></View>
+            </LinearLayout>
+
+            <com.rainbow.laundry.view.MyGridView
+                android:id="@+id/gridview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="5"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp" />
+
+            <TextView
+                android:background="@mipmap/pic_home_gg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.rainbow.laundry.view.MyGridView
+                android:id="@+id/gridview1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:horizontalSpacing="1dp"
+                android:background="@color/gray"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="1dp" />
+            <View
+                style="@style/linestyle0"
+                android:layout_height="1dp"></View>
+
+            <Button
+                android:id="@+id/btn_order"
+                android:text="按键下单"
+                style="@style/btn_bule_long"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/icon_home_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

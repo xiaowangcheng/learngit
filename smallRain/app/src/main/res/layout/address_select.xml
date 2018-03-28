@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/function_list"
+    android:paddingTop="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/textstyle"
+        android:text="请选择您收货地址" />
+
+    <RelativeLayout
+        android:id="@+id/rl_to_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_to_address"
+            style="@style/textstyle"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="请添加收货地址"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="invisible"
+            />
+        <RelativeLayout
+            android:id="@+id/rl_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_tel"
+                android:layout_marginLeft="10dp"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:layout_toRightOf="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_detial"
+                android:layout_below="@+id/tv_name"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/image_arrow"
+            android:src="@mipmap/icon_arrow_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</LinearLayout>

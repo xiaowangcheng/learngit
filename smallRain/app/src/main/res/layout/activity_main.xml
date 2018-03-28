@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    style="@style/StyleLayoutMain" >
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/Main_DrawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_above="@+id/button_view_include"
+                >
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/button_view_include"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true">
+
+                <View
+                     style="@style/linestyle0"
+                    android:layout_marginBottom="3dp"></View>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/movie_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/icon_tab_main_select"
+                        android:drawablePadding="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/btn_bule"
+                        android:text="首页" />
+                    <TextView
+                        android:id="@+id/tv_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@mipmap/icon_tab_order_no_select"
+                        android:drawablePadding="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/gray"
+                        android:textStyle="bold"
+                        android:text="订单" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+        <!--左边侧滑-->
+        <LinearLayout
+            android:id="@+id/Main_LeftLayout"
+            android:layout_gravity="left"
+            style="@style/StyleLayoutMain"
+            android:paddingTop="45dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="20dp">
+            <ImageView
+                android:id="@+id/image_head"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@mipmap/default_user_circle"/>
+
+
+            <TextView
+                android:id="@+id/tv_tel"
+                android:textColor="#333333"
+                android:textSize="17sp"
+                android:text="撒打算打算打算"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:text="余额"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    style="@style/textstyle" />
+
+                <TextView
+                    android:layout_toLeftOf="@+id/tv_recharge"
+                    android:text="¥0.00"
+                    android:layout_centerVertical="true"
+                    style="@style/textstyle" />
+
+                <TextView
+                    android:id="@+id/tv_recharge"
+                    android:text="去充值"
+                    android:textColor="@color/btn_bule"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    style="@style/textstyle" />
+            </RelativeLayout>
+
+            <View style="@style/linestyle0"></View>
+
+            <LinearLayout
+                android:id="@+id/lin_coupon"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:gravity="center|left">
+                <TextView
+                    android:id="@+id/tv_coupon"
+                    android:text="优惠券"
+                    android:textSize="14sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    style="@style/textstyle" />
+
+            </LinearLayout>
+
+            <View style="@style/linestyle0"></View>
+
+            <LinearLayout
+                android:id="@+id/lin_point_manager"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:gravity="center|left">
+                <TextView
+                    android:id="@+id/tv_point_manager"
+                    android:text="积分管理"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    style="@style/textstyle" />
+            </LinearLayout>
+
+
+            <View style="@style/linestyle0"></View>
+
+        <LinearLayout
+            android:id="@+id/lin_address"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:gravity="center|left">
+            <TextView
+                android:id="@+id/tv_address"
+                android:text="地址管理"
+                android:clickable="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                style="@style/textstyle" />
+            </LinearLayout>
+
+
+            <View style="@style/linestyle0"></View>
+
+            <LinearLayout
+                android:id="@+id/lin_message"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:gravity="center|left">
+                <TextView
+                    android:text="我的消息"
+                    style="@style/textstyle" />
+            </LinearLayout>
+
+
+            <View style="@style/linestyle0"></View>
+
+
+
+        <LinearLayout
+            android:id="@+id/lin_tel"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:gravity="center|left">
+            <TextView
+                android:text="客服电话"
+                android:textSize="14sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                style="@style/textstyle" />
+            </LinearLayout>
+
+
+            <View style="@style/linestyle0"></View>
+            <LinearLayout
+                android:id="@+id/lin_suggest"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:gravity="center|left">
+                <TextView
+                    android:text="意见反馈"
+                    style="@style/textstyle" />
+                </LinearLayout>
+
+
+            <View
+                android:id="@+id/tv_exit_line"
+                style="@style/linestyle0"></View>
+            <LinearLayout
+                android:id="@+id/lin_exit"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:paddingBottom="15dp"
+                android:gravity="bottom|left">
+                <TextView
+                    android:id="@+id/tv_exit"
+                    android:drawableLeft="@mipmap/pic_leftbar_exit"
+                    android:text="退出登录"
+                    android:textSize="14sp"
+                    android:drawablePadding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View style="@style/linestyle0"></View>
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+
+
+
+</RelativeLayout>

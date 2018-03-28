@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/StyleLayoutMain">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="25dp"
+                        android:gravity="center"
+                        android:layout_weight="1">
+                        <com.rainbow.laundry.view.NumImageView
+                            android:id="@+id/image"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" />
+                        <TextView
+                            android:id="@+id/tv_mi"
+                            android:textColor="#999999"
+                            android:text="0.33mx0.43m"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/tv_price"
+                            android:textColor="#FF7171"
+                            android:text="¥158.0／袋"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/gray"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:paddingRight="41dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:textColor="#23ACF2"
+                            android:text="可入袋:"
+                            android:textSize="12sp"
+                            android:drawablePadding="10dp"
+                            android:drawableLeft="@mipmap/icom_dx_correct"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textColor="#999999"
+                            android:layout_marginTop="8dp"
+                            android:text="衬衫、裤子、羽绒服、沙发套等多种衣物"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:textColor="#FF7171"
+                            android:text="不可入袋:"
+                            android:textSize="12sp"
+                            android:drawablePadding="10dp"
+                            android:drawableLeft="@mipmap/icom_dx_error"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:textColor="#999999"
+                            android:layout_marginTop="8dp"
+                            android:textSize="12sp"
+                            android:text="真丝类、真丝类、婚纱类、鞋靴类、箱包类"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        style="@style/function_list"
+                        android:layout_marginTop="0dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:text="袋子里可装些什么?"
+                            android:textSize="12sp"
+                            android:layout_margin="5dp"
+                            style="@style/textstyle" />
+                        <View  style="@style/linestyle0"></View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="33dp">
+
+                            <TextView
+                                android:layout_width="111dp"
+                                android:text="T恤"
+                                android:layout_gravity="center"
+                                android:textSize="12sp"
+                                android:layout_margin="5dp"
+                                style="@style/textstyle"
+                                android:gravity="center"/>
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/gray"></View>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+                                <TextView
+                                    android:text="最多可装"
+                                    android:textSize="12sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"/>
+                                <TextView
+                                    android:text="36"
+                                    android:textSize="12sp"
+                                    android:textColor="#23ACF2"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"/>
+                                <TextView
+
+                                    android:text="件"
+                                    android:textSize="12sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <View  style="@style/linestyle0"></View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="33dp">
+
+                            <TextView
+                                android:layout_width="111dp"
+                                android:text="衬衫"
+                                android:textSize="12sp"
+                                android:layout_margin="5dp"
+                                style="@style/textstyle"
+                                android:gravity="center"/>
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/gray"></View>
+                             <LinearLayout
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent"
+                                 android:orientation="horizontal"
+                                 android:gravity="center">
+                                 <TextView
+                                     android:text="最多可装"
+                                     android:textSize="12sp"
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"/>
+                                 <TextView
+                                     android:text="32"
+                                     android:textSize="12sp"
+                                     android:textColor="#23ACF2"
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"/>
+                                 <TextView
+
+                                     android:text="件"
+                                     android:textSize="12sp"
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"/>
+                             </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View  style="@style/linestyle0"></View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="33dp">
+
+                            <TextView
+                                android:layout_width="111dp"
+                                android:text="西裤"
+                                android:textSize="12sp"
+                                android:layout_margin="5dp"
+                                style="@style/textstyle"
+                                android:gravity="center"/>
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/gray"></View>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+                                <TextView
+                                    android:text="最多可装"
+                                    android:textSize="12sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"/>
+                                <TextView
+                                    android:text="15"
+                                    android:textSize="12sp"
+                                    android:textColor="#23ACF2"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"/>
+                                <TextView
+
+                                    android:text="件"
+                                    android:textSize="12sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View  style="@style/linestyle0"></View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="33dp">
+
+                            <TextView
+                                android:layout_width="111dp"
+                                android:text="半身裙"
+                                android:textSize="12sp"
+                                android:layout_margin="5dp"
+                                style="@style/textstyle"
+                                android:gravity="center"/>
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/gray"></View>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+                                <TextView
+                                    android:text="最多可装"
+                                    android:textSize="12sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"/>
+                                <TextView
+                                    android:text="18"
+                                    android:textSize="12sp"
+                                    android:textColor="#23ACF2"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"/>
+                                <TextView
+
+                                    android:text="件"
+                                    android:textSize="12sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View  style="@style/linestyle0"></View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="33dp">
+
+                            <TextView
+                                android:layout_width="111dp"
+                                android:text="窗帘"
+                                android:textSize="12sp"
+                                android:layout_margin="5dp"
+                                style="@style/textstyle"
+                                android:gravity="center"/>
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/gray"></View>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+                                <TextView
+                                    android:text="主窗帘"
+                                    android:textSize="12sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"/>
+                                <TextView
+                                    android:text="6~8"
+                                    android:textSize="12sp"
+                                    android:textColor="#23ACF2"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"/>
+                                <TextView
+
+                                    android:text="㎡或纱窗帘"
+                                    android:textSize="12sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"/>
+
+                                <TextView
+                                    android:text="9~12"
+                                    android:textSize="12sp"
+                                    android:textColor="#23ACF2"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"/>
+                                <TextView
+
+                                    android:text="㎡"
+                                    android:textSize="12sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <View  style="@style/linestyle0"></View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="33dp">
+
+                            <TextView
+                                android:layout_width="111dp"
+                                android:text="沙发套"
+                                android:textSize="12sp"
+                                android:layout_margin="5dp"
+                                style="@style/textstyle"
+                                android:gravity="center"/>
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/gray"></View>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+                                <TextView
+                                    android:text="主窗帘"
+                                    android:textSize="12sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"/>
+                                <TextView
+                                    android:text="4~5"
+                                    android:textSize="12sp"
+                                    android:textColor="#23ACF2"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"/>
+                                <TextView
+
+                                    android:text="㎡或纱窗帘"
+                                    android:textSize="12sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"/>
+
+                                <TextView
+                                    android:text="5~7"
+                                    android:textSize="12sp"
+                                    android:textColor="#23ACF2"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"/>
+                                <TextView
+
+                                    android:text="㎡"
+                                    android:textSize="12sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:drawableTop="@mipmap/icon_pro_service1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="高效服务"/>
+                <TextView
+                    android:drawableTop="@mipmap/icon_pro_service1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="每单投保"/>
+                <TextView
+                    android:drawableTop="@mipmap/icon_pro_service1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="上门取件"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_margin="20dp"
+                android:layout_height="108dp">
+
+                <LinearLayout
+                    style="@style/function_list"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_shuoming"
+                        android:textSize="13sp"
+                        android:text="《彩虹清洗说明及不能提供清洗服务衣物列表》"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
