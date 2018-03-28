@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTextGrey">#FF333333</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="main_background">#f5f5f5</color>
+
+    <color name="btn_bule">#5da8e3</color>
+    <color name="text_color">#333333</color>
+
+    <color name="gray">#7e7e7e</color>
+    <color name="red">#FF4081</color>
+
+
+    <color name="color_theme">#489cfa</color>
+    <color name="transparent">#00000000</color>
+    <color name="yellow">#fc9630</color>
+
+    <color name="mr_province_line_border">#FF0000</color>
+
+    <!--文字颜色：  正常，浅色-->
+    <color name="font_normal">#313131</color>
+    <color name="font_light">#3c3c3c</color>
+    <color name="dark">#5e5656</color>
+    <color name="split">#cccccc</color>
+</resources>

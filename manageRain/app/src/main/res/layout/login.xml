@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_logins">
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="2"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_tel"
+                android:drawableLeft="@mipmap/icon_logins_mm"
+                android:drawableRight="@mipmap/icon_logins_jz_normal"
+                android:drawablePadding="10dp"
+                android:hint="请输入账号/用户名/手机号"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyEditText"/>
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@mipmap/icon_logins_mm"
+                android:hint="请输入登录密码"
+                android:inputType="numberPassword"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyEditText"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="忘记密码？"
+                    android:textColor="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_weight="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btn_login"
+                android:text="登录"
+                style="@style/btn_bule_long"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+
+                android:textColor="@color/white"
+                android:drawablePadding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+
+                android:text="                     "
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:drawablePadding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

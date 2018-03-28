@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/StyleLayoutMain"
+    android:orientation="vertical">
+    <include  layout="@layout/include_title" ></include>
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/bsbx_icon_camera_default" />
+
+
+    <EditText
+        android:id="@+id/et_beizhu"
+        android:layout_marginTop="10dp"
+        android:hint="请输入衣服瑕疵处"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+    <Button
+        android:id="@+id/btn_submit"
+        android:text="提交"
+        style="@style/btn_bule_long" />
+</LinearLayout>

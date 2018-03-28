@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/StyleLayoutMain">
+
+    <include  layout="@layout/include_title" ></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.github.jdsjlzx.recyclerview.LRecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/btn_update"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+        <Button
+            android:id="@+id/btn_update"
+            android:text="一键修改状态"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            style="@style/btn_bule_long" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

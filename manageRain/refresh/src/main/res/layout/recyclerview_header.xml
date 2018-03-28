@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <com.jude.rollviewpager.RollPagerView
+        android:id="@+id/roll_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:rollviewpager_play_delay="3000"/>
+
+
+    <GridView
+        android:id="@+id/gv_menus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:focusable="true"
+        android:horizontalSpacing="0dp"
+        android:numColumns="5"
+        android:scrollbars="none"></GridView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="推荐商品"
+        android:layout_marginLeft="10dp"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@mipmap/sqsy_icon_tjcp_defalt" />
+</LinearLayout>
+

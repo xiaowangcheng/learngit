@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.manage.rain.view.SquareLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dip"
+    android:layout_margin="5dp"
+    android:gravity="center">
+
+    <!--android:clickable="true"-->
+    <!--android:focusableInTouchMode="true"-->
+    <!--android:focusable="true"-->
+    <LinearLayout
+        android:id="@+id/shoukuan"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_shoukuan"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_ddgl_wcldd"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/txt_shoukuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="O2O收款"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:gravity="center"/>
+    </LinearLayout>
+</com.manage.rain.view.SquareLayout>

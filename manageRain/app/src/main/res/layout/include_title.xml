@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseStyle_m"
+    android:background="@color/white"
+    android:paddingBottom="8dp">
+
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lin_left"
+            style="@style/baseStyle_w"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_left"
+                style="@style/baseStyle_w"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/icon_arrow_left" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/baseStyle_w"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:textSize="36px"
+            android:layout_marginBottom="10dp" />
+
+
+        <LinearLayout
+            android:id="@+id/lin_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:textColor="@color/white"
+                style="@style/baseStyle_w" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
